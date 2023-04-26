@@ -95,3 +95,21 @@ const scrollReveal = function () {
 scrollReveal();
 
 addEventOnElem(window, "scroll", scrollReveal);
+
+
+
+// time management in why section
+// Get the <span> element by its ID
+var clock = document.getElementById("clock");
+
+// Update the <span> element with the current time every second
+setInterval(function() {
+  // Create a new Date object with the current date and time
+  var now = new Date();
+
+  // Format the time as "HH:mm:ss AM/PM"
+  var time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+
+  // Set the text content of the <span> element to the formatted time
+  clock.textContent = time;
+}, 1000); // Update the clock every second (1000 milliseconds)

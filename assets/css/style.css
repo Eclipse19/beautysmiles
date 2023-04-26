@@ -563,7 +563,7 @@ body {
 .collection-card .card-title { margin-block-end: 12px; }
 
 .collection-card .card-text {
-  color: var(--black);
+  color: var(--white);
   font-size: var(--fs-6);
   font-weight: var(--fw-600);
   margin-block-end: auto;
@@ -579,7 +579,7 @@ body {
 
 .shop .title-wrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 18px;
@@ -592,6 +592,7 @@ body {
   position: relative;
   overflow: hidden;
 }
+
 
 .shop-card .badge {
   position: absolute;
@@ -649,7 +650,6 @@ body {
   color: var(--black);
   font-weight: var(--fw-700);
 }
-
 .shop-card .card-title {
   color: var(--black);
   font-size: var(--fs-7);
@@ -657,7 +657,6 @@ body {
   margin-block-end: 8px;
   transition: var(--transition-1);
 }
-
 .shop-card .card-title:is(:hover, :focus) {
   text-decoration: underline;
   color: var(--hoockers-green);
@@ -1410,3 +1409,13 @@ body {
   .offer .container { gap: 120px; }
 
 }
+
+  /**
+   * pre bride  animation 
+   */
+   .animate:hover{
+           scale: 1.1;
+           transition: all 0.3s ease-in-out;
+           border-radius: 2rem;
+   }
+  

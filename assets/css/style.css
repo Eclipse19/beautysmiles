@@ -584,6 +584,7 @@ body {
   align-items: center;
   gap: 18px;
   margin-block-end: 50px;
+
 }
 
 .shop .btn-link:is(:hover, :focus) { color: var(--hoockers-green); }
@@ -591,6 +592,7 @@ body {
 .shop-card .card-banner {
   position: relative;
   overflow: hidden;
+  
 }
 
 
@@ -598,6 +600,7 @@ body {
   position: absolute;
   top: 20px;
   left: 20px;
+  
 }
 
 .shop-card .card-actions {
@@ -609,11 +612,12 @@ body {
   gap: 10px;
   opacity: 0;
   transition: var(--transition-2);
+  
 }
 
 .shop-card .action-btn {
   background-color: var(--white);
-  font-size: 24px;
+  font-size:24px;
   padding: 12px;
   border-radius: 50%;
   transition: var(--transition-1);
@@ -639,6 +643,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 5px;
+  
 }
 
 .shop-card .del {

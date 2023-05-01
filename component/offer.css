@@ -27,29 +27,39 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
 }
 .container>ul>li{
-  border: 1px solid #6c757d;
+  border: 2px solid #6c757d;
   list-style: none;
   border-radius: 2px;
   gap: 3px;
 }
 img{
-    height: 20rem;
+    height: 22rem;
     width: 18rem;
+}
+.salon{
+    text-align: center;
+    color: rgb(224, 124, 140);
+    font-weight: 200;
 }
 
 @media (max-width:970px) {
-    .container > ul{
+    .container{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         flex-direction: column;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-
     }
+    img{
+        height: 12rem;
+        width: 10rem;
+    }
+    .container ul li{
+        margin: 0rem 0.2rem;
+    }
+
   
 }
 

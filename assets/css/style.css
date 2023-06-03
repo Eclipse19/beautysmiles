@@ -582,10 +582,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 18px;
-  margin-block-end: 50px;
-
+  gap: 8px;
+  margin-block-end: 10px;
 }
+
 
 .shop .btn-link:is(:hover, :focus) { color: var(--hoockers-green); }
 
@@ -594,8 +594,6 @@ body {
   overflow: hidden;
   
 }
-
-
 .shop-card .badge {
   position: absolute;
   top: 20px;
@@ -613,7 +611,9 @@ body {
   opacity: 0;
   transition: var(--transition-2);
   
+  
 }
+
 
 .shop-card .action-btn {
   background-color: var(--white);
@@ -621,8 +621,17 @@ body {
   padding: 12px;
   border-radius: 50%;
   transition: var(--transition-1);
-}
 
+}
+@media (max-width:550px) {
+  .shop-card .action-btn {
+
+    font-size:15px;
+    padding: 8px;
+
+  }
+  
+}
 .shop-card .action-btn:is(:hover, :focus) {
   background-color: var(--black);
   color: var(--white);
@@ -661,6 +670,7 @@ body {
   font-weight: var(--fw-500);
   margin-block-end: 8px;
   transition: var(--transition-1);
+
 }
 .shop-card .card-title:is(:hover, :focus) {
   text-decoration: underline;
